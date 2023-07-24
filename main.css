@@ -72,11 +72,52 @@ nav {
   font-family: "Poppins", "Arial";
 }
 
+footer .grid-footer {
+  padding: 280px 176px 114px 176px;
+  display: grid;
+  grid-template-columns: 40% 15% 15% 15% 15%;
+}
+footer h3 {
+  font-size: 22px;
+  font-weight: 770;
+  text-align: inherit;
+  margin-bottom: 20px;
+}
+footer .btn {
+  font-size: 16px;
+  font-weight: 760;
+  color: black;
+  font-family: "SharpSansNo1-Thin";
+  justify-content: flex-start;
+  align-items: start;
+  height: auto;
+  margin-bottom: 12px;
+}
+footer p {
+  font-size: 16px;
+  font-weight: 760;
+  line-height: normal;
+}
+footer .desk {
+  max-width: 270px;
+}
+footer .all-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  background: linear-gradient(#64BB47, #2C9553);
+  color: #FFF;
+  text-align: center;
+}
+
 p {
   font-family: "SharpSansNo1-Thin";
   font-size: 24px;
   font-style: normal;
   font-weight: 750;
+  line-height: 34px;
 }
 p.content {
   font-size: 18px;
@@ -88,6 +129,16 @@ h2 {
   text-align: center;
   font-family: "SharpSansNo1-Semibold", "Arial";
   font-size: 54px;
+  font-style: normal;
+  font-weight: 770;
+  margin-bottom: 15px;
+}
+
+h3 {
+  color: #151414;
+  text-align: center;
+  font-family: "SharpSansNo1-Semibold", "Arial";
+  font-size: 30px;
   font-style: normal;
   font-weight: 770;
   margin-bottom: 15px;
@@ -199,4 +250,180 @@ h2 {
 #about-us .right {
   display: flex;
   align-items: end;
+}
+
+#fresh-vegetables {
+  display: flex;
+  padding: 140px 70px 0 135px;
+  height: 722px;
+  gap: 95px;
+  align-items: center;
+}
+#fresh-vegetables h2 {
+  margin-bottom: 30px;
+  text-align: left;
+}
+#fresh-vegetables p {
+  margin-bottom: 40px;
+}
+#fresh-vegetables .fresh-vegetables-cards {
+  display: flex;
+}
+#fresh-vegetables .fresh-vegetables-content {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+#best-chefs {
+  display: flex;
+  padding: 80px 168px 0 135px;
+  height: 722px;
+  gap: 31px;
+  align-items: center;
+}
+#best-chefs h2 {
+  margin-bottom: 30px;
+  text-align: left;
+}
+#best-chefs .m-bottom {
+  margin-bottom: 30px;
+}
+#best-chefs .check {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#best-chefs .best-chefs-content {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+#best-chefs .direction {
+  display: flex;
+  align-items: baseline;
+  gap: 17px;
+}
+#best-chefs .im-width {
+  width: 20px;
+  height: 20px;
+}
+
+#special-dishes {
+  padding: 177px 135px 0 135px;
+}
+#special-dishes p {
+  text-align: center;
+  margin-bottom: 60px;
+}
+#special-dishes p.mini {
+  font-size: 18px;
+  line-height: 28px;
+}
+#special-dishes .flex-dishes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 51px;
+  margin-bottom: 60px;
+}
+#special-dishes .info {
+  width: 356px;
+  height: 520px;
+  background-color: #fff;
+  border: 1px solid #EBEBEB;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#special-dishes .center {
+  box-shadow: 10px 20px 70px 0px rgba(71, 68, 68, 0.08), -15px -50px 81px 0px #FFF;
+}
+#special-dishes .btnn {
+  margin: 0 auto;
+}
+
+#happy-clients {
+  padding: 190px 193px 0 194px;
+}
+#happy-clients h2 {
+  margin-bottom: 47px;
+}
+#happy-clients h3 {
+  font-size: 20px;
+  margin-bottom: 3px;
+}
+#happy-clients p {
+  font-size: 18px;
+  font-weight: 750;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+#happy-clients .avatar-info {
+  font-size: 14px;
+  font-weight: 760;
+  margin-left: 0;
+}
+#happy-clients .avatars {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 25px;
+  margin-bottom: 50px;
+}
+#happy-clients .avatar {
+  display: grid;
+  grid-template-columns: 25% 75%;
+  margin-bottom: 32px;
+  margin-top: 40px;
+  margin-left: 25px;
+}
+#happy-clients .name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+#happy-clients .ava {
+  width: 514px;
+  height: 347px;
+}
+#happy-clients .arrows {
+  display: flex;
+  margin: 0 auto;
+}
+#happy-clients .left {
+  box-shadow: 10px 20px 70px 0px rgba(71, 68, 68, 0.08), -15px 0px 81px 0px #FFF;
+  background-color: #fff;
+  border: 1px solid #EBEBEB;
+  border-radius: 20px;
+}
+
+#subscription {
+  padding: 190px 0 0 0;
+}
+#subscription p {
+  text-align: center;
+  margin-bottom: 60px;
+}
+#subscription .btn {
+  margin: 0 auto 0 0;
+}
+#subscription .email-item {
+  display: flex;
+  gap: 15px;
+}
+#subscription .email {
+  display: flex;
+  align-items: center;
+  width: 330px;
+  height: 60px;
+  flex-shrink: 0;
+  border-radius: 165px;
+  border: 1.5px solid #F5F5F5;
+  background: #FFF;
+  margin: 0 0 0 auto;
+  font-size: 18px;
+  font-weight: 750;
 }/*# sourceMappingURL=main.css.map */

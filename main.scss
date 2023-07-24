@@ -6,6 +6,7 @@ p{
         font-size: 24px;
         font-style: normal;
         font-weight: 750;
+        line-height: 34px;
         
         &.content{
             font-size: 18px;
@@ -26,6 +27,20 @@ h2{
     
             
 }
+
+h3{
+    color: #151414;
+    text-align: center;
+    font-family: $main-font;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 770;
+    margin-bottom: 15px;
+    
+            
+}
+
+
 
 
 #hero{
@@ -126,8 +141,7 @@ h2{
     display: flex;
     padding: 120px 70px 0 135px;
     height: 722px;
-    gap: 95px;
-    
+    gap: 95px;    
     align-items: center;
         
     h2{
@@ -144,9 +158,7 @@ h2{
         width: 210px;
     }
 
-    .about-us-content{
-        
-    }
+    
     .about-us-cards{
         display: flex;
         height: 722px;
@@ -163,4 +175,208 @@ h2{
         align-items: end;        
     }
 }
+
+
+#fresh-vegetables{
+    display: flex;
+    padding: 140px 70px 0 135px;
+    height: 722px;
+    gap: 95px;
+    align-items: center;
+    
+    h2{
+        margin-bottom: 30px;
+        text-align: left;
+    }
+
+    p{
+        margin-bottom: 40px;
+        
+    }
+
+    .fresh-vegetables-cards{
+        display: flex;
+    }
+    .fresh-vegetables-content{
+        display: flex;
+        flex-direction: column;
+        align-items: start;    
+    }
+}
+
+#best-chefs{
+    display: flex;
+    padding: 80px 168px 0 135px;
+    height: 722px;
+    gap: 31px;
+    align-items: center;
+    h2{
+        margin-bottom: 30px;
+        text-align: left;
+    }
+
+    p{
+        //margin-bottom: 40px;
+        
+    }
+    .m-bottom{
+        margin-bottom: 30px;
+    }
+    .check{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        
+    }
+
+    .best-chefs-content{
+        display: flex;
+        flex-direction: column;
+        align-items: start;    
+    }
+    .direction{
+        display: flex;
+        align-items: baseline;
+        gap: 17px;
+    }
+    .im-width{
+        width: 20px;
+        height: 20px;
+
+    }
+}
+
+#special-dishes{
+    padding: 177px 135px 0 135px;
+    p{
+        text-align: center;
+        margin-bottom: 60px;
+        &.mini{
+            font-size: 18px;
+            line-height: 28px;
+        }
+    }
+
+    .flex-dishes{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 51px;
+        margin-bottom: 60px;
+    }
+
+    .info{
+        width: 356px;
+        height: 520px;
+        background-color:#fff;
+        border: 1px solid #EBEBEB;
+        border-radius: 20px;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;      
+       }
+
+       .center{
+        box-shadow: 10px 20px 70px 0px rgba(71, 68, 68, 0.08), -15px -50px 81px 0px #FFF;
+       }
+       .btnn{
+        margin: 0 auto;
+       }
+}
+
+#happy-clients{
+    padding: 190px 193px 0 194px;
+    
+    
+    h2{
+        margin-bottom: 47px;
+    }
+    h3 {
+        font-size: 20px;
+        margin-bottom: 3px;
+    }
+    
+    p{
+        font-size: 18px;
+        font-weight: 750;
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    .avatar-info{
+        font-size: 14px;
+        font-weight: 760;
+        margin-left: 0;
+    }
+
+    .avatars{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap: 25px;
+        margin-bottom: 50px;
+    }
+    .avatar{
+        display: grid;
+        grid-template-columns: 25% 75%;
+        margin-bottom: 32px;
+        margin-top: 40px;
+        margin-left: 25px;
+    }
+    .name{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .ava{
+        width: 514px;
+        height: 347px;
+    }
+    .arrows{
+        display: flex;
+        margin: 0 auto;
+    }
+    .left{
+        box-shadow: 10px 20px 70px 0px rgba(71, 68, 68, 0.08), -15px 0px 81px 0px #FFF;
+        background-color:#fff;
+        border: 1px solid #EBEBEB;
+        border-radius: 20px;
+        
+    }
+
+}
+
+#subscription{
+    padding: 190px 0 0 0;
+
+    p{
+        text-align: center;
+        margin-bottom: 60px;
+    }
+
+    .btn{
+        margin: 0 auto 0 0;
+    }
+    .email-item{
+        display: flex;
+        gap: 15px;
+    }
+    .email{
+        display: flex;
+        align-items: center;
+        width: 330px;
+        height: 60px;
+        flex-shrink: 0;
+        border-radius: 165px;
+        border: 1.5px solid #F5F5F5;
+        background: #FFF;
+        margin: 0 0 0 auto;
+        font-size: 18px;
+        font-weight: 750;
+    }
+}
+
 
