@@ -1,7 +1,6 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  max-width: 1440px;
 }
 
 a {
@@ -9,7 +8,6 @@ a {
 }
 
 .conteiner {
-  max-width: 1440px;
   margin: 0 auto;
 }
 
@@ -41,8 +39,9 @@ a {
   font-weight: 400;
 }
 header {
-  padding: 40px 68px 0px 70px;
+  padding: 33px 54px 0px 77px;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   font-family: "Sofia Pro Light", "Arial";
   font-size: 20px;
@@ -57,15 +56,22 @@ header {
   color: #5FB848;
 }
 
+.navi {
+  display: flex;
+}
+
+.right {
+  align-items: center;
+}
+
 nav {
   display: flex;
   justify-content: center;
-  gap: 40px;
-  margin-right: 379px;
+  gap: 48px;
 }
 
 .logo {
-  margin-right: 160px;
+  margin: auto 148px auto auto;
   font-size: 26px;
   font-style: normal;
   font-weight: 500;
@@ -73,9 +79,11 @@ nav {
 }
 
 footer .grid-footer {
-  padding: 280px 176px 114px 176px;
+  padding: 256px 100px 100px 176px;
   display: grid;
-  grid-template-columns: 40% 15% 15% 15% 15%;
+  grid-template-columns: 36% 17% 15% 17% 15%;
+  max-width: 2000px;
+  margin: 0 auto;
 }
 footer h3 {
   font-size: 22px;
@@ -110,8 +118,42 @@ footer .all-right {
   background: linear-gradient(#64BB47, #2C9553);
   color: #FFF;
   text-align: center;
+  position: relative;
+  left: 5px;
+}
+footer .logo {
+  margin: 15px 148px 36px auto;
 }
 
+.icon-btn {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  height: 24px;
+}
+
+@media (max-width: 850px) {
+  .mobile-only {
+    display: none !important;
+  }
+  .img {
+    width: 50px;
+    height: 50px;
+  }
+  .desktop-only {
+    display: none !important;
+  }
+  .mobile-nav {
+    position: absolute;
+    flex-direction: column;
+    right: 0;
+    top: 74px;
+    align-items: flex-end;
+    width: 100%;
+    transition: all 0.4s ease;
+    transform: translateX(100%);
+  }
+}
 p {
   font-family: "SharpSansNo1-Thin";
   font-size: 24px;
@@ -146,33 +188,38 @@ h3 {
 
 #hero {
   display: flex;
-  height: 886px;
+  justify-content: center;
 }
 #hero h1 {
   font-family: "SharpSansNo1-Semibold", "Arial";
   font-size: 76px;
   font-style: normal;
   font-weight: 770;
-  width: 596px;
+  line-height: 100px;
   margin-bottom: 30px;
-}
-#hero .hero-content {
-  margin: 0;
-  padding: 179px 0 0 135px;
-  width: 596px;
-  height: 531px;
 }
 #hero p {
   line-height: 34px;
   margin-bottom: 50px;
-  width: 504px;
 }
 #hero .green-color {
   color: #5FB848;
 }
+#hero .grid-block {
+  display: grid;
+  padding: 145px 135px 0 175px;
+  grid-template-columns: 60% 40%;
+  grid-auto-rows: 720px;
+  max-width: 2000px;
+}
+#hero .hero-card {
+  position: relative;
+  right: 295px;
+  top: -214px;
+}
 
 #why-choose-us {
-  padding: 20px 215px 0 215px;
+  padding: 20px 200px 0 230px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -192,7 +239,7 @@ h3 {
   margin-bottom: 0;
 }
 #why-choose-us h3 {
-  margin-bottom: 18px;
+  margin-bottom: 25px;
 }
 #why-choose-us h3.num {
   font-family: "SharpSansNo1-Bold", "Arial";
@@ -210,7 +257,7 @@ h3 {
   font-style: normal;
   font-weight: 750;
   line-height: 28px;
-  margin-bottom: 60px;
+  margin-bottom: 25px;
 }
 #why-choose-us .numbers {
   display: flex;
@@ -220,13 +267,15 @@ h3 {
 
 #about-us {
   display: flex;
-  padding: 120px 70px 0 135px;
+  justify-content: center;
+  padding: 200px 70px 0 147px;
   height: 722px;
   gap: 95px;
   align-items: center;
+  margin: 0 auto;
 }
 #about-us h2 {
-  margin-bottom: 30px;
+  margin-bottom: 38px;
   text-align: left;
 }
 #about-us p {
@@ -254,10 +303,12 @@ h3 {
 
 #fresh-vegetables {
   display: flex;
-  padding: 140px 70px 0 135px;
+  justify-content: center;
+  padding: 200px 120px 0 135px;
   height: 722px;
-  gap: 95px;
+  gap: 70px;
   align-items: center;
+  max-width: 2000px;
 }
 #fresh-vegetables h2 {
   margin-bottom: 30px;
@@ -265,6 +316,7 @@ h3 {
 }
 #fresh-vegetables p {
   margin-bottom: 40px;
+  font-size: 22px;
 }
 #fresh-vegetables .fresh-vegetables-cards {
   display: flex;
@@ -277,22 +329,28 @@ h3 {
 
 #best-chefs {
   display: flex;
-  padding: 80px 168px 0 135px;
-  height: 722px;
-  gap: 31px;
-  align-items: center;
+  justify-content: center;
+  padding: 130px 40px 0 135px;
+  gap: 35px;
+  align-items: flex-start;
+  max-width: 2000px;
 }
 #best-chefs h2 {
-  margin-bottom: 30px;
+  margin-bottom: 35px;
   text-align: left;
+  line-height: 70px;
+}
+#best-chefs p {
+  font-size: 20px;
 }
 #best-chefs .m-bottom {
   margin-bottom: 30px;
+  font-size: 22px;
 }
 #best-chefs .check {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 10px;
 }
 #best-chefs .best-chefs-content {
   display: flex;
@@ -308,9 +366,15 @@ h3 {
   width: 20px;
   height: 20px;
 }
+#best-chefs .best-chefs-cards {
+  position: relative;
+  top: -60px;
+}
 
 #special-dishes {
-  padding: 177px 135px 0 135px;
+  padding: 64px 118px 0 135px;
+  max-width: 2000px;
+  margin: 0 auto;
 }
 #special-dishes p {
   text-align: center;
@@ -319,17 +383,21 @@ h3 {
 #special-dishes p.mini {
   font-size: 18px;
   line-height: 28px;
+  margin: 0 20px;
+  margin: 0 20px 50px 20px;
+}
+#special-dishes h3 {
+  margin-bottom: 25px;
+  margin-top: 20px;
 }
 #special-dishes .flex-dishes {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 51px;
+  gap: 50px;
   margin-bottom: 60px;
 }
 #special-dishes .info {
-  width: 356px;
-  height: 520px;
   background-color: #fff;
   border: 1px solid #EBEBEB;
   border-radius: 20px;
@@ -346,20 +414,26 @@ h3 {
 }
 
 #happy-clients {
-  padding: 190px 193px 0 194px;
+  padding: 178px 180px 0 194px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 #happy-clients h2 {
   margin-bottom: 47px;
 }
 #happy-clients h3 {
   font-size: 20px;
-  margin-bottom: 3px;
+  margin-top: 20px;
+  margin-bottom: -8px;
 }
 #happy-clients p {
   font-size: 18px;
   font-weight: 750;
   margin-left: 25px;
-  margin-right: 25px;
+  margin-right: 10px;
+  line-height: 30px;
 }
 #happy-clients .avatar-info {
   font-size: 14px;
@@ -369,20 +443,19 @@ h3 {
 #happy-clients .avatars {
   display: grid;
   grid-template-columns: 50% 50%;
-  gap: 25px;
+  gap: 15px;
   margin-bottom: 50px;
 }
 #happy-clients .avatar {
   display: grid;
-  grid-template-columns: 25% 75%;
-  margin-bottom: 32px;
-  margin-top: 40px;
-  margin-left: 25px;
+  grid-template-columns: 26% 74%;
+  margin-bottom: 30px;
+  margin-top: 45px;
+  margin-left: 21px;
 }
 #happy-clients .name {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: flex-start;
 }
 #happy-clients .ava {
@@ -401,20 +474,26 @@ h3 {
 }
 
 #subscription {
-  padding: 190px 0 0 0;
+  padding: 185px 0 0 7px;
 }
 #subscription p {
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 59px;
+}
+#subscription h2 {
+  font-size: 36px;
 }
 #subscription .btn {
   margin: 0 auto 0 0;
+  width: 170px;
+  font-size: 20px;
 }
 #subscription .email-item {
   display: flex;
   gap: 15px;
 }
 #subscription .email {
+  font-family: "SharpSansNo1-Thin";
   display: flex;
   align-items: center;
   width: 330px;
@@ -426,4 +505,6 @@ h3 {
   margin: 0 0 0 auto;
   font-size: 18px;
   font-weight: 750;
+  outline: none;
+  padding-left: 24px;
 }/*# sourceMappingURL=main.css.map */

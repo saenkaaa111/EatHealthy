@@ -17,26 +17,37 @@
 <body>
      
     <header>
-        <div class="logo">UI.desk</div>
-        <nav>
-            <a href="#" class="nav-link green">Home</a>
-            <a href="#" class="nav-link">About</a>
-            <a href="#" class="nav-link">Contact</a>
-            <a href="#" class="nav-link">Testimonials</a>            
-        </nav>
-        <img src="./photo/Icons.png" alt="Корзина" style="margin-right: 30px;">
-        <a href="#" class="btn convert">Order Now</a> 
+        <div class="navi">
+            <img src="./photo/logo.png" alt="Logo" class="logo">
+            <nav>
+                <a href="#" class="nav-link green">Home</a>
+                <a href="#" class="nav-link">About</a>
+                <a href="#" class="nav-link">Contact</a>
+                <a href="#" class="nav-link">Testimonials</a>            
+            </nav>
+        </div>
+        <div class="navi right">
+
+        
+            <img src="./photo/Icons.png" alt="Корзина" style="margin-right: 30px;">
+            <a href="#" class="btn convert desktop-only">Order Now</a> 
+        </div>
+        <!--<button class="icon-btn mobile-only" onclick="toggleNavVisibility()"><img src="./photo/BurgerMenu.png"></button>-->
     </header>
 
      <section id="hero" class="conteiner">
-        <div class="hero-content">
-            <h1>Just <span class="green-color">Eat healthy</span> food to live a healthier life</h1>
-            <p>Enjoy a healthy life by eating healthy foods that have extraordinary flavors that make your life healthier for today and in the future</p>            
-            <a href="#" class="btn fill">Order Now</a>
+        <div class="grid-block">
+            <div>
+                <h1>Just <span class="green-color">Eat healthy</span> <br> food  to live a <br> healthier life</h1>
+                <p>Enjoy a healthy life by eating healthy foods <br/> that have extraordinary flavors that make <br/> your life healthier for today and in the future</p>            
+                <a href="#" class="btn fill">Order Now</a>
+            </div>
+            <div class="hero-card">
+                <img src="./photo/header-Image.png" alt="header-Image" >
+            </div>        
         </div>
-        <div class="hero-card">
-            <img src="./photo/header-Image.png" alt="header-Image">
-        </div>        
+        
+        
      </section>
 
      <section id="why-choose-us" class="conteiner">  
@@ -44,17 +55,17 @@
         <p>Organic food is grown without the use of synthetic chemicals</p>
         <div class="content">
             <div>
-                <img src="./photo/order.png" alt="Order" style="margin-bottom: 36px;">        
+                <img src="./photo/order.png" alt="Order" style="margin-bottom: 28px;">        
                 <h3>Easy to order</h3> 
                 <p class="content">Foods include fresh produce, meats as well as processed</p> 
             </div>
             <div>
-                <img src="./photo/map.png" alt="Map" style="margin-bottom: 36px;">        
+                <img src="./photo/map.png" alt="Map" style="margin-bottom: 28px;">        
                 <h3>Live Order</h3> 
                 <p class="content">Place your online Order easily and get the food instantly</p> 
             </div>
             <div>
-                <img src="./photo/organic.png" alt="Organic" style="margin-bottom: 36px;">        
+                <img src="./photo/organic.png" alt="Organic" style="margin-bottom: 28px;">        
                 <h3 >100% Organic</h3> 
                 <p class="content">Organic food is grown without the use of synthetic chemicals</p> 
             </div>
@@ -136,17 +147,17 @@
         <p>Made with premium & 100% Organic ingredients</p>
         <div class="flex-dishes">
             <div class="info">
-                <img src="./photo/dishes1.png" alt="dishes-Image" >
+                <img src="./photo/dishes1.png" alt="dishes-Image" style="margin-top: 50px;">
                 <h3>Green Salad</h3>
                 <p class="mini">A salad combined witha delicious cut of bacon and mixed with tasty and fresh sesome oil.</p>
             </div>
             <div class="info center">
-                <img src="./photo/dishes2.png" alt="dishes-Image">
+                <img src="./photo/dishes2.png" alt="dishes-Image" style="margin-top: 50px;">
                 <h3>Beef Salad</h3>
                 <p class="mini">A salad combined witha delicious cut of bacon and mixed with tasty and fresh sesome oil.</p>
             </div>
             <div class="info">
-                <img src="./photo/dishes3.png" alt="dishes-Image">
+                <img src="./photo/dishes3.png" alt="dishes-Image" style="margin-top: 50px;">
                 <h3>Nut Salad</h3>
                 <p class="mini">A salad combined witha delicious cut of bacon and mixed with tasty and fresh sesome oil.</p>
             </div>
@@ -189,7 +200,7 @@
         <h2>Subscribe to the Newsletter</h2>
         <p>Enter your email below to get our daily offers and news</p>
         <div class="email-item">
-            <p class="email">Enter your email.</p>
+            <input placeholder="Enter your email." class="email">
             <a href="#" class="btn fill">Get Started</a>
         </div>
      </section>
@@ -197,7 +208,7 @@
      <footer>
         <div class="grid-footer">
             <div>
-                <h3>UI.desk</h3>
+                <img src="./photo/logo.png" alt="Logo" class="logo">
                 <p class="desk">On formed merits hunted unable merely by mr whence or.</p>
             </div>
             <div>
