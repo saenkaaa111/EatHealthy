@@ -17,7 +17,7 @@ a{
     text-decoration: none;
 }
 
-.conteiner{
+.container{
     //max-width: 1440px;
     margin: 0 auto;
 }
@@ -146,13 +146,14 @@ footer{
         color: #FFF;
         text-align: center;
         position: relative;
-        left: 5px;
+        
     }
 
     .logo{
         margin: 15px 148px 36px auto;
         
     }
+
 }
 
 .icon-btn{
@@ -163,32 +164,5 @@ footer{
 }
 
 
-/*@media(max-width: 850px){
-    .mobile-only {
-        display: none !important;
-        
-        
-    
-    }
-    .img{
-        width: 50px;
-        height: 50px;
-    }
 
-    .desktop-only {
-        display: none !important;
-            
-    }
-    .mobile-nav{
-    position: absolute;
-    flex-direction: column;
-    right: 0;
-    top: 74px;
-    //background-color: $card-background-color;
-    align-items: flex-end;
-    width: 100%;
-    transition: all .4s ease;
-    transform: translateX(100%);
-    }
-}
 
