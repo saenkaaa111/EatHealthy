@@ -488,7 +488,7 @@ h3 {
   padding-left: 24px;
 }
 
-@media (max-width: 850px) {
+@media (max-width: 1200px) {
   .des-only {
     display: block;
   }
@@ -536,11 +536,13 @@ h3 {
     width: 400px;
     height: 400px;
     margin: 0 0 0 240px;
-    position: relative;
-    top: -455px;
+    position: absolute;
+    top: -350px;
+    left: 50px;
   }
   #hero p {
     margin-bottom: 30px;
+    position: relative;
   }
   #hero .grid-block {
     grid-template-columns: 100%;
@@ -622,14 +624,20 @@ h3 {
   }
   #fresh-vegetables .fresh-vegetables-cards {
     position: relative;
-    top: 550px;
+    top: 390px;
+    left: 150px;
   }
   #fresh-vegetables h2 {
     text-align: center;
+    margin: 0 auto 30px auto;
   }
   #fresh-vegetables p {
     text-align: center;
     margin-bottom: 250px;
+  }
+  #fresh-vegetables img {
+    width: 45%;
+    height: 55%;
   }
   #best-chefs {
     padding: 70px 40px 0 40px;
@@ -639,6 +647,7 @@ h3 {
   #best-chefs h2 {
     text-align: center;
     line-height: 50px;
+    margin: 0 auto 35px auto;
   }
   #best-chefs .m-bottom {
     text-align: center;
@@ -647,6 +656,12 @@ h3 {
     position: relative;
     top: 0;
     margin: 0 auto;
+  }
+  #best-chefs .chef-foto {
+    width: 65%;
+    height: 65%;
+    position: relative;
+    left: 120px;
   }
   #special-dishes {
     padding: 70px 40px 0 40px;
@@ -699,6 +714,7 @@ h3 {
   }
   #subscription .email {
     text-align: center;
+    margin: 0 auto;
   }
   #subscription .btn {
     margin: 0 auto;
@@ -708,14 +724,14 @@ h3 {
   }
   footer .grid1 {
     grid-row: 1;
-    grid-column: 1/5;
+    grid-column: 2/5;
   }
   footer .grid2 {
     grid-row: 2;
   }
   footer .grid-footer {
     padding: 70px 30px 70px 30px;
-    grid-template-columns: 20% 20% 20% 20%;
+    grid-template-columns: 10% 20% 20% 20% 20% 10%;
     gap: 10px;
   }
   footer .btn {
@@ -748,5 +764,44 @@ h3 {
   .hero-card {
     width: 100px;
     height: 30px;
+  }
+}
+@media (max-width: 800px) {
+  #hero img {
+    width: 400px;
+    height: 400px;
+    margin: 0 0 0 240px;
+    position: absolute;
+    top: -350px;
+  }
+  #fresh-vegetables .fresh-vegetables-cards {
+    position: relative;
+    top: 450px;
+    left: 170px;
+  }
+}
+@media (max-width: 500px) {
+  #hero img {
+    top: -440px;
+    left: 10px;
+  }
+  #fresh-vegetables {
+    padding: 40px 30px 0 30px;
+  }
+  #fresh-vegetables .fresh-vegetables-cards {
+    position: relative;
+    top: 510px;
+    left: 90px;
+  }
+  #fresh-vegetables img {
+    width: 55%;
+    height: 55%;
+  }
+  #best-chefs .chef-foto {
+    left: 60px;
+    top: 30px;
+  }
+  footer .grid-footer {
+    grid-template-columns: 1% 20% 20% 20% 20% 5%;
   }
 }/*# sourceMappingURL=main.css.map */
