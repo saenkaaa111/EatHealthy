@@ -52,6 +52,9 @@ header {
 .nav-link {
   color: #2C3847;
 }
+.nav-link.last {
+  margin-bottom: 20px;
+}
 .nav-link.green {
   color: #5FB848;
 }
@@ -414,16 +417,28 @@ h3 {
   margin-right: 10px;
   line-height: 30px;
 }
+#happy-clients .ava {
+  flex-shrink: 0;
+  box-shadow: 10px 20px 70px 0px rgba(71, 68, 68, 0.08), -15px 0px 81px 0px #FFF;
+  background-color: #fff;
+  border: 1px solid #EBEBEB;
+  border-radius: 20px;
+}
+#happy-clients .ava:first-child {
+  transition: all 0.4s ease;
+}
 #happy-clients .avatar-info {
   font-size: 14px;
   font-weight: 760;
   margin-left: 0;
 }
 #happy-clients .avatars {
-  display: grid;
-  grid-template-columns: 50% 50%;
+  display: flex;
+  flex-shrink: 0;
   gap: 15px;
   margin-bottom: 50px;
+  max-width: 1050px;
+  overflow: hidden;
 }
 #happy-clients .avatar {
   display: grid;
@@ -441,15 +456,14 @@ h3 {
   width: 514px;
   height: 347px;
 }
+#happy-clients .icons {
+  display: flex;
+}
 #happy-clients .arrows {
   display: flex;
   margin: 0 auto;
-}
-#happy-clients .left {
-  box-shadow: 10px 20px 70px 0px rgba(71, 68, 68, 0.08), -15px 0px 81px 0px #FFF;
-  background-color: #fff;
-  border: 1px solid #EBEBEB;
-  border-radius: 20px;
+  background: white;
+  border: white;
 }
 
 #subscription {
@@ -680,7 +694,8 @@ h3 {
     padding: 70px 40px 0 40px;
   }
   #happy-clients .avatars {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-shrink: 0;
     margin-bottom: 20px;
   }
   #happy-clients .ava {
@@ -760,6 +775,11 @@ h3 {
     background-color: white;
     transform: translateX(100%);
     transition: all 0.4s ease;
+    margin-bottom: 30px;
+  }
+  .mobile-nav.visible {
+    transform: translateX(0);
+    z-index: 1;
   }
   .hero-card {
     width: 100px;
