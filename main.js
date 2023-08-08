@@ -18,12 +18,22 @@ function doSlide(direction) {
     currentSlide = 0;
   }
   const newFirstCard = document.querySelector('.ava:first-child');
-  const newMargin = 
-  newFirstCard.style.marginLeft = '-530px';
+  const newLastCard = document.querySelector('.ava:last-child');
   
-  setTimeout(() => {
-    categoriesContainer.appendChild(newFirstCard);
-    newFirstCard.style.marginLeft = '0';
-  }, 400);
+  
+  if (direction > 0 ) {
+    const newMargin =   newFirstCard.style.marginLeft = '-530px';
+    setTimeout(() => {
+        categoriesContainer.appendChild(newFirstCard);
+        newFirstCard.style.marginLeft = '0';
+      }, 400);
+  }
+  else{
+    const newMargin =   newFirstCard.style.marginLeft = '530px';
+    setTimeout(() => {
+        categoriesContainer.prepend(newLastCard);
+        newFirstCard.style.marginLeft = '0';
+    }, 400);
+}
 }
 
