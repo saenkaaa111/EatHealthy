@@ -1,0 +1,17 @@
+{
+  "name": "eathealthy",
+  "version": "0.0.1",
+  "description": "ссылка на макет https://www.figma.com/file/kwBzqEEHiD4EOuNRYlDwVi/File?type=design&node-id=711-147&mode=design&t=rLmIglwbAnfaIWfp-0",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sasha",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "styled-components": "^6.0.7"
+  }
+}
